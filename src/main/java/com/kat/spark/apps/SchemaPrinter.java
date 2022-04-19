@@ -1,5 +1,7 @@
-package com.kat.spark;
+package com.kat.spark.apps;
 
+import com.kat.spark.CsvReader;
+import com.kat.spark.JsonReader;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 

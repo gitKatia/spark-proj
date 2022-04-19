@@ -1,4 +1,4 @@
-package com.kat.spark;
+package com.kat.spark.apps;
 
 import static com.kat.spark.utils.SparkUtils.*;
 import static org.apache.spark.sql.functions.concat;
