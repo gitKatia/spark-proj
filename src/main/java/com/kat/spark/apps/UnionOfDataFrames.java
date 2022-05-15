@@ -51,7 +51,10 @@ public class UnionOfDataFrames {
                 .withColumn("land_in_acres", df.col("fields.acres"))
                 .withColumn("geoX", df.col("geometry.coordinates").getItem(0))
                 .withColumn("geoY", df.col("geometry.coordinates").getItem(1))
-                .drop("fields").drop("geometry").drop("record_timestamp").drop("recordid")
+                .drop("fields")
+                .drop("geometry")
+                .drop("record_timestamp")
+                .drop("recordid")
                 .drop("datasetid");
 
         return df;

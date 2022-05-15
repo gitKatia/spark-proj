@@ -35,6 +35,7 @@ public class DataSetExample {
 		List<String> filterList = Arrays.asList("'this'", "'is'", "'he'");
 
 		String filters = filterList.stream()
+				.map(String::toUpperCase)
 				.collect(Collectors.joining(",", "(", ")"));
 		String sqlFilter = format("value not in %s", filters);
 		Dataset<Row> filteredDf = wordDataFrame.filter(sqlFilter);
